@@ -13,11 +13,11 @@ const HomeThree = () => {
             <HomeThreeNavBar />
             <HomeThreeHeroSection />
             <HomeThreeAboutArea />
-            <HomeThreeServices/>
-            <HomeThreeTeams/>
-            <HomeThreeMembership/>
+            <HomeThreeServices />
+            {/* <HomeThreeTeams /> */}
+            <HomeThreeMembership />
             {/* <HomeThreeFaq/> */}
-            <Footer/>
+            <Footer />
         </>
     );
 };

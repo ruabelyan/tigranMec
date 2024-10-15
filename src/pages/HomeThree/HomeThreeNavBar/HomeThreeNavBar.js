@@ -58,7 +58,7 @@ const HomeThreeNavBar = () => {
                         </div>
                         <div className="header-cta-info header-cta-info-3 d-flex f-left">
                            <div className="header-cta-icon">
-                              <img src="img/cta/message-icon.png" alt="" />
+                              <img height={25} width={25} src="img/cta/message-icon.svg" alt="" />
                            </div>
                            <div className="header-cta-text">
                               <h5 className="theme-color">{t('email_address_key')}</h5>
@@ -67,7 +67,7 @@ const HomeThreeNavBar = () => {
                         </div>
                         <div className="header-cta-info header-cta-info-3 d-flex f-left">
                            <div className="header-cta-icon">
-                              <img src="img/cta/phone-icon.png" alt="" />
+                              <img height={25} width={25} src="img/cta/phone-icon.svg" alt="" />
                            </div>
                            <div className="header-cta-text">
                               <h5 className="theme-color">{t('phone_number_key')}</h5>

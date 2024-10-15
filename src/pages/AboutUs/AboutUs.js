@@ -15,14 +15,14 @@ const AboutUs = () => {
 
    return (
       <>
-          <HomeThreeNavBar />
+         <HomeThreeNavBar />
          <CommonPageHeader title={t("about_us_key")} subtitle={t("about_key")} />
          <AboutArea />
          <AboutCounter />
          {/* <AboutAppoinment /> */}
          {/* <HomeOurTeam/> */}
          <HomeFact />
-         <AboutTestimonial />
+         {/* <AboutTestimonial /> */}
          {/* <AboutAnalysis /> */}
          <Footer />
       </>
