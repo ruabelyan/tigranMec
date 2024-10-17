@@ -23,8 +23,8 @@ const HomeThreeHeroSection = () => {
                            <div className="col-xl-7 col-lg-9">
                               <div className="hero-text hero-text-box">
                                  <div className="hero-slider-caption ">
-                                    <h2>{t('hero_best_care')}</h2>
-                                    <p>{t('hero_description')}</p>
+                                    <h2>{t("tm_health_center")}</h2>
+                                    <p>{t('tm_free_medical_care')}</p>
 
                                  </div>
                                  <div className="hero-slider-btn">

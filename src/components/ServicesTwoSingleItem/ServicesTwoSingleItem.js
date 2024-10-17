@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ServicesTwoSingleItem = ({image,title}) => {
+const ServicesTwoSingleItem = ({ image, title, about }) => {
     return (
         <>
             <div className="col-xl-4 col-lg-4 col-md-6">
@@ -14,8 +14,7 @@ const ServicesTwoSingleItem = ({image,title}) => {
                     <div className="service-content-box">
                         <div className="service-content">
                             <h3><Link to="/blogDetails">{title}</Link></h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo.</p>
+                            <p>{about}</p>
                         </div>
                         <Link to="/servicesDetails" className="service-link">Read More</Link>
                     </div>

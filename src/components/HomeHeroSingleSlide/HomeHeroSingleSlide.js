@@ -14,8 +14,8 @@ const HomeHeroSingleSlide = ({ bg_className }) => {
                      <div className="hero-text">
                         <div className="hero-slider-caption ">
                            <h5>{t('hero_care')}</h5>
-                           <h1>{t('hero_best_care')}</h1>
-                           <p>{t('hero_description')}</p>
+                           <h1>{t("tm_health_center")}</h1>
+                           <p>{t('tm_free_medical_care')}</p>
                         </div>
                      </div>
                   </div>

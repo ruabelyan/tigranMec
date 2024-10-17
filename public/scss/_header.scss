@@ -196,19 +196,19 @@
      margin-left: 13px;
 }
  .header-lang-list {
-     position: absolute;
-     width: 100%;
-     right: 0;
-     opacity: 0;
-     visibility: hidden;
-     padding: 20px 15px !important;
-     border-top: 3px solid;
-     transition: .4s;
-     z-index: 999;
-     background: #fff;
-     padding-bottom: 5px;
-     padding-top: 4px;
-     top: 100%;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0px 15px !important;
+    border-top: 3px solid;
+    transition: 0.4s;
+    z-index: 999;
+    background: #fff;
+    padding-bottom: 5px;
+    padding-top: 4px;
+    top: 100%;
 }
  .header-lang-list-3 {
      margin-top: 15px;

@@ -18,10 +18,10 @@ const AboutUs = () => {
          <HomeThreeNavBar />
          <CommonPageHeader title={t("about_us_key")} subtitle={t("about_key")} />
          <AboutArea />
+         <HomeFact />
          <AboutCounter />
          {/* <AboutAppoinment /> */}
          {/* <HomeOurTeam/> */}
-         <HomeFact />
          {/* <AboutTestimonial /> */}
          {/* <AboutAnalysis /> */}
          <Footer />

@@ -11,7 +11,7 @@ const DoctorsOne = () => {
     const { t } = useTranslation();
     return (
         <>
-        <HomeThreeNavBar />
+            <HomeThreeNavBar />
             <CommonPageHeader title={t('doctores_key')} subtitle={t('doctor_key')} />
             <DoctorOneTeamArea />
             <HomeFact />

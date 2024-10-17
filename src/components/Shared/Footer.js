@@ -15,10 +15,11 @@ const Footer = () => {
                         <div className="footer-contact-info footer-contact-info-3 mb-40">
                            <div className="footer-logo mb-35">
                               {/* <Link to="/"><img style={{ maxWidth: 150 }} src="img/logo/footer-logo-3.png" alt="" /></Link> */}
-                              logologo
+                              <Link to="/"><img height={80} src="img/logo/logo.png" alt="" /></Link>
+
                            </div>
                            <div className="footer-contact-content mb-25">
-                              <p>{t("bagratunyants_clinic_info_key")}</p>
+                              <p>{t("tm_clinic_info_key")}</p>
                            </div>
                            <div className="footer-emailing">
                               <ul>

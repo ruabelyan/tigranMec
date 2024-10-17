@@ -1,6 +1,8 @@
 import React from 'react';
 import HomeThreeSingleMembership from '../../../components/HomeThreeSingleMembership/HomeThreeSingleMembership';
 import Slider from "react-slick";
+import { useTranslation } from 'react-i18next';
+
 import HomeThreeSingleReviews from '../../../components/HomeThreeSingleReviews/HomeThreeSingleReviews';
 
 const HomeThreeMembership = () => {
@@ -32,10 +34,12 @@ const HomeThreeMembership = () => {
       ]
 
    };
+   const { t } = useTranslation();
+
    return (
       <>
          <section className="membership-area membership-bg pt-120 pb-120 pos-rel"
-            data-background="img/membership/membership-bg.jpg">
+            data-background="img/membership/membership-bg.jpg" style={{ backgroundSize: 'cover' }}>
             <div className="container">
                <div className="membership-box pt-115 pb-90 white-bg">
                   <div className="row">
@@ -46,7 +50,7 @@ const HomeThreeMembership = () => {
                            </div>
                            <div className="section-text pos-rel">
                               {/* <h5>Exclusive Buyer</h5> */}
-                              <h1>Կարծիքներ մեր մասին</h1>
+                              <h1>{t('reviews_key')}</h1>
                            </div>
                            <div className="section-line pos-rel">
                               <img src="img/shape/section-title-line.png" alt="" />
@@ -64,10 +68,10 @@ const HomeThreeMembership = () => {
                </div>
                <div className="membership-review member-ship-map gray-bg pos-rel">
                   <Slider className='testimonials-activation' {...settings}>
-                     <HomeThreeSingleReviews image="2" name="Mr. Halim Dawn" />
-                     <HomeThreeSingleReviews image="3" name="Hiliam D. Pawlu" />
-                     <HomeThreeSingleReviews image="1" name="Eric Z. Piedie" />
-                     <HomeThreeSingleReviews image="2" name="Mr. Halim Dawn" />
+                     <HomeThreeSingleReviews image="2" name="Արմենուհի" membersText='Հիանալի անձնակազմ,բանիմաց և սրտացավ բժիշկներ:' />
+                     <HomeThreeSingleReviews image="3" name="Ashot" membersText='Ես էլ եկա շնորհակալություն հայտնեմ սոնոգրաֆիստ Ինգա Սաֆարյանից, կխնդրեմ որ անպայման փոխանցեք, անչափ բարի, հոգատար, սիրալիր, անշահախնդիր, հիանալի մասնագետ ու պարզապես լավ Մարդ: ' />
+                     <HomeThreeSingleReviews image="1" name="Гаянэ" membersText='От всей души благодарен всему персоналу больницы за их доброжелательное и профессионально отношение' />
+                     <HomeThreeSingleReviews image="" name="Lilit" membersText='Shnorakalutyunem haytnum vor prkeciq tatikis kyanqn shnorakalem Ohanyan Armenin' />
                   </Slider>
                </div>
             </div>

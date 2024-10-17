@@ -71,7 +71,7 @@ function App() {
             <Route path="/blogLeftSideBar" element={<BlogLeftSideBar />} />
             <Route path="/blogNoSideBar" element={<BlogNoSideBar />} />
             <Route path="/blogTwoColumn" element={<BlogTwoColumn />} />
-            <Route path="/blogTwoMasonry" element={<BlogTwoColumnMasonry/>} />
+            <Route path="/blogTwoMasonry" element={<BlogTwoColumnMasonry />} />
             <Route path="/blogThreeColumn" element={<BlogThreeColumn />} />
             <Route path="/blogThreeColMasonry" element={<BlogThreeColMasonry />} />
             <Route path="/blogDetails" element={<BlogDetails />} />
