@@ -16,7 +16,7 @@ const ServicesTwoSingleItem = ({ image, title, about }) => {
                             <h3><Link to="/blogDetails">{title}</Link></h3>
                             <p>{about}</p>
                         </div>
-                        <Link to="/servicesDetails" className="service-link">Read More</Link>
+                        <Link to="/servicesDetails" className="service-link">Ավելին</Link>
                     </div>
                 </div>
             </div>

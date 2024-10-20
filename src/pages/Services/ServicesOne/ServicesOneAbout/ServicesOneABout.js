@@ -133,7 +133,7 @@ const ServicesOneABout = () => {
                         <HomeSIngleService key={index} title={service} />
                      ))
                   ) : (
-                     <p>{t('no_services_found_key')}</p>
+                     <p>{t('Որոնման արդյունքում տվյալներ չեն հայտնաբերվել')}</p>
                   )}
                </div>
             </div>

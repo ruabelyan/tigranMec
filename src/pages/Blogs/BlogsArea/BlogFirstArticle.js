@@ -25,7 +25,7 @@ const BlogFirstArticle = () => {
                             folks face when managing conditions.</p>
                     </div>
                     <div className="read-more mt-30">
-                        <Link to="/blogDetails" className="primary_btn theme-btn">read more</Link>
+                        <Link to="/blogDetails" className="primary_btn theme-btn">Ավելին</Link>
                     </div>
                 </div>
             </article>

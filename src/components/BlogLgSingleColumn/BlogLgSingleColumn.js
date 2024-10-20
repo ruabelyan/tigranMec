@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BlogLgSingleColumn = ({ image, masonry}) => {
+const BlogLgSingleColumn = ({ image, masonry }) => {
     return (
         <>
             <div className={masonry ? "" : "col-lg-6 col-md-6 grid-item"}>
                 <article className="postbox post format-image mb-40">
                     <div className="postbox__thumb">
                         <Link to="/blogDetails">
-                            <img src={`img/blog/ms${image}.jpg`} alt="blog img"/>
+                            <img src={`img/blog/ms${image}.jpg`} alt="blog img" />
                         </Link>
 
                     </div>
@@ -28,7 +28,7 @@ const BlogLgSingleColumn = ({ image, masonry}) => {
                                 topics that consistently affect a wide range of people. They also get kudos.</p>
                         </div>
                         <div className="read-more">
-                            <Link to="/blogDetails" className="read-more">read more <i className="fas fa-long-arrow-alt-right"></i></Link>
+                            <Link to="/blogDetails" className="read-more">Ավելին <i className="fas fa-long-arrow-alt-right"></i></Link>
                         </div>
                     </div>
                 </article>

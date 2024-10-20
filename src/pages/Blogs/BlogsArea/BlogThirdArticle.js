@@ -4,15 +4,15 @@ import Slider from "react-slick";
 import useGlobalContext from '../../../hooks/useGlobalContext';
 
 const BlogThirdArticle = () => {
-   const { SlickArrowLeft, SlickArrowRight} = useGlobalContext();
+   const { SlickArrowLeft, SlickArrowRight } = useGlobalContext();
    const settings = {
       autoplay: false,
       autoplaySpeed: 10000,
       dots: false,
       fade: true,
       arrows: true,
-      prevArrow: <SlickArrowLeft/>,
-      nextArrow: <SlickArrowRight/>,
+      prevArrow: <SlickArrowLeft />,
+      nextArrow: <SlickArrowRight />,
 
    };
 
@@ -43,7 +43,7 @@ const BlogThirdArticle = () => {
                      folks face when managing conditions.</p>
                </div>
                <div className="read-more mt-30">
-                  <Link to="/blogDetails" className="primary_btn theme-btn">read more</Link>
+                  <Link to="/blogDetails" className="primary_btn theme-btn">Ավելին</Link>
                </div>
             </div>
          </article>

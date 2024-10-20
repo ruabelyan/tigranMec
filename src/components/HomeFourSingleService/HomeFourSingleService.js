@@ -14,7 +14,7 @@ const HomeFourSingleService = ({ image, name, title }) => {
                   <h3><Link to="/servicesDetails">{title}</Link></h3>
                   <p className="mb-20">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                      ex ea commodo.</p>
-                  <Link className="service-link" to="/servicesDetails">Read More
+                  <Link className="service-link" to="/servicesDetails">Ավելին
                      <i className="fal fa-long-arrow-right"></i></Link>
                </div>
             </div>

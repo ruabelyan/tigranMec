@@ -16,7 +16,7 @@ const HomeFiveAbout = () => {
          themeBg: 'theme-bg2',
          bgIcon: 'services_bg_icon2.png',
          img: 'h5services__icon2.png',
-         btnText: 'read more',
+         btnText: 'Ավելին',
          url: '/about'
       },
    ]

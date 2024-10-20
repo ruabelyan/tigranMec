@@ -10,10 +10,9 @@ const ServicesOne = () => {
    const { t } = useTranslation('');
    return (
       <>
-                   <HomeThreeNavBar />
+         <HomeThreeNavBar />
          <CommonPageHeader title={t('department_key')} subtitle={t('department_key')} />
          <ServicesOneABout />
-         {/* <CalculateArea /> */}
          <ServicesOneHiringArea />
          <Footer />
       </>
