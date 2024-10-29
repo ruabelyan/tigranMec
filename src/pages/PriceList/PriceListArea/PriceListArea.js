@@ -97,7 +97,7 @@ const PriceListArea = () => {
 
                   <ul
                      style={{
-                        height: isExpanded ? 'auto' : 0,
+                        height: true ? 'auto' : 0,
                         overflow: 'hidden',
                         transition: 'height 0.3s ease-out',
                         paddingLeft: '20px'
