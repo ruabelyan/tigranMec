@@ -15,7 +15,12 @@ const Footer = () => {
                         <div className="footer-contact-info footer-contact-info-3 mb-40">
                            <div className="footer-logo mb-35">
                               {/* <Link to="/"><img style={{ maxWidth: 150 }} src="img/logo/footer-logo-3.png" alt="" /></Link> */}
-                              <Link to="/"><img height={80} src="img/logo/logo.png" alt="" /></Link>
+                              <Link to="/"><img style={{
+                                 background: 'white',
+                                 borderRadius: '10px',
+                                 width: 'fit-content',
+                                 padding: '10px'
+                              }} height={80} src="img/logo/logo.png" alt="" /></Link>
 
                            </div>
                            <div className="footer-contact-content mb-25">

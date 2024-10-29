@@ -16,8 +16,8 @@ const HomeThreeServices = () => {
                            <img className="section-back-icon back-icon-left" src="img/section/section-back-icon.png" alt="" />
                         </div>
                         <div className="section-text pos-rel">
-                           <h5>Բաժանմունքեր</h5>
-                           <h1>Ծառայություններ</h1>
+                           {/* <h5>Բաժանմունքեր</h5> */}
+                           <h1>Բաժանմունքեր</h1>
                         </div>
                         <div className="section-line pos-rel">
                            <img src="img/shape/section-title-line.png" alt="" />
@@ -32,13 +32,13 @@ const HomeThreeServices = () => {
                </div>
 
                <div className="row">
-                  <ServicesTwoSingleItem image="1" title={t('therapeutic_key')} about='Այն բազմապրոֆիլ բաժանմունք է, որտեղ բուժվում են շնչական, սիրտ-անոթային, ստամոքս- աղիքային, միզուղիների, արյան համակարգի, ինչպես նաև՝ համակցված թերապևտիկ պաթոլոգիաներով պացիենտներ:' />
-                  <ServicesTwoSingleItem image="2" title={t("pediatric_key")} about='Երեխաների առողջության մասին հոգ տանելը առաջնահերթություն է յուրաքանչյուր ծնողի համար։' />
-                  <ServicesTwoSingleItem image="3" title={t("women_consultation_key")} about='Առողջության մասին հոգալն ու պահպանելը կնոջ համար առաջնահերթություն է։ Այնուամենայնիվ, երբեմն կարող են առաջանալ գինեկոլագիական խնդիրներ, որոնք պահանջում են մասնագիտացված բժշկական օգնություն։' />
-                  {/* <ServicesTwoSingleItem image="4" title={t("physiotherapy_key")} />
-                  <ServicesTwoSingleItem image="5" title={t("day_hospital_key")} />
-                  <ServicesTwoSingleItem image="6" title={t("medical_physical_culture_key")} />
-                  <ServicesTwoSingleItem image="7" title={t("palliative_service_key")} /> */}
+                  <ServicesTwoSingleItem icon='1' image="1" title={t('Թերապևտիկ բաժանմունք')} about='Այն բազմապրոֆիլ բաժանմունք է, որտեղ բուժվում են շնչական, սիրտ-անոթային, ստամոքս- աղիքային, միզուղիների, արյան համակարգի, ինչպես նաև՝ համակցված թերապևտիկ պաթոլոգիաներով պացիենտներ:' />
+                  <ServicesTwoSingleItem icon='2' image="2" title={t("Մանկական բաժանմունք")} about='Երեխաների առողջության մասին հոգ տանելը առաջնահերթություն է յուրաքանչյուր ծնողի համար։' />
+                  <ServicesTwoSingleItem icon='3' image="3" title={t("Գինեկոլոգիական բաժանմունք")} about='Գինեկոլոգիական բաժանմունքում իրականացվում է գինեկոլոգիական հիվանդությունների վիրահատական և կոնսերվատիվ բուժում:' />
+                  <ServicesTwoSingleItem icon='4' image="4" title={t("Լաբորատոր բաժանմունք")} about='Լաբորատոր բաժանմունքի ստորաբաժանումներում կատարվում են տարբեր ախտաբանական վիճակների ժամանակ սպիտակուցային, ածխաջրատային,' />
+                  <ServicesTwoSingleItem icon='5' image="5" title={t("Նեղ մասնագիտական բաժանմունք")} about=' lorem ipsu dolor' />
+                  <ServicesTwoSingleItem icon='6' image="6" title={t("Ռենտգենոլոգիական բաժանմունք")} about='lorem ipsu dolor' />
+
                </div>
 
             </div>

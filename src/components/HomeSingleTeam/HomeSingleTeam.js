@@ -11,7 +11,7 @@ const HomeSingleTeam = ({ image, title, subtitle }) => {
                   justifyContent: 'center'
                }} className="team-thumb mb-45 pos-rel">
                   <div style={{ width: '270px', height: '270px' }}>
-                     <img style={{ maxWidth: 200, maxHeight: 300, }} src={`img/team/member (${image}).png`} alt="" />
+                     <img style={{ maxWidth: 200, maxHeight: 300, }} src={`../img/team/member (${image}).png`} alt="" />
                   </div>
 
                   {/* <Link className="team-link" to="/doctorDetails">+</Link> */}

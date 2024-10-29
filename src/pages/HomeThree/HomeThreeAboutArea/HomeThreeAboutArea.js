@@ -15,7 +15,7 @@ const HomeThreeAboutArea = () => {
                      </div>
                      <div className="about-title mb-20 fix">
                         <h1 className="mb-40">{t('years_of_experience_key')}</h1>
-                        <h5 className="blue-color m-0">{t('medidove_help_readers_key')}</h5>
+                        <h5 className="blue-color m-0">lorem ipsum</h5>
                      </div>
                   </div>
                   <div className="col-xl-6 col-lg-6">
@@ -33,8 +33,8 @@ const HomeThreeAboutArea = () => {
                <div className="row pt-120">
 
 
-                  <SingleCount icon="7" counter="100" title={t("expert_doctors_key")} />
-                  <SingleCount icon="83" counter="89" title={t("problem_solve_key")} />
+                  <SingleCount icon="7" counter="56" title={t("expert_doctors_key")} />
+                  <SingleCount icon="83" counter="500" title={t("problem_solve_key")} />
                   <SingleCount icon="9" counter="20" title={t("award_winner_key")} />
 
 

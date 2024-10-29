@@ -12,8 +12,8 @@ const CounterArea = () => {
             <div className="container">
                <div className="row">
 
-                  <SingleCount icon="7" counter="100" title={t("expert_doctors_key")} />
-                  <SingleCount icon="83" counter="89" title={t("problem_solve_key")} />
+                  <SingleCount icon="7" counter="56" title={t("expert_doctors_key")} />
+                  <SingleCount icon="83" counter="500" title={t("problem_solve_key")} />
                   <SingleCount icon="9" counter="20" title={t("award_winner_key")} />
 
                </div>

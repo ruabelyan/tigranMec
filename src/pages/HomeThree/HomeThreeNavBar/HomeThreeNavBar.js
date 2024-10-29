@@ -91,7 +91,7 @@ const HomeThreeNavBar = () => {
                                  <li><Link to="/doctors">{t('doctors_key')}</Link></li>
                                  <li><Link to="/about">{t('about_key')}</Link></li>
                                  <li><Link to="/contact">{t('contact_key')}</Link></li>
-                                 {/* <li><Link to="/appoinment">{t('appointment_key')}</Link></li> */}
+                                 <li><Link to="/priceList">{t('Գնացուցակ')}</Link></li>
                               </ul>
                            </nav>
                         </div>

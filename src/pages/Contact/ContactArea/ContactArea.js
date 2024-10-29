@@ -26,7 +26,7 @@ const ContactArea = () => {
                             <div className="contact text-center mb-30">
                                 <i className="fas fa-phone"></i>
                                 <h3>{t("call_here_key")}</h3>
-                                <p>(010) 48-21-51</p>
+                                <p>(010) 58-27-11</p>
                             </div>
                         </div>
                     </div>

@@ -39,6 +39,7 @@ import WishList from './pages/wishList/WishList';
 import HomeFive from './pages/HomeFive/HomeFive';
 import './App.css';
 import NotFound from './pages/NotFound/NotFound';
+import PriceList from './pages/PriceList/PriceList';
 
 
 function App() {
@@ -56,7 +57,7 @@ function App() {
             <Route path="/homeFive" element={<HomeFive />} />
             <Route path="/services" element={<ServicesOne />} />
             <Route path="/servicesTwo" element={<ServicesTwo />} />
-            <Route path="/servicesDetails" element={<ServicesDetails />} />
+            <Route path="/servicesDetails/:id" element={<ServicesDetails />} />
             <Route path="/doctors" element={<DoctorsOne />} />
             <Route path="/doctorsTwo" element={<DoctorsTwo />} />
             <Route path="/doctorDetails" element={<DoctorDetails />} />
@@ -86,6 +87,7 @@ function App() {
             <Route path="/portfolioSlider" element={<PortfolioSlider />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/notMatch" element={<NotFound />} />
+            <Route path="/pricelist" element={<PriceList />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

@@ -20,7 +20,7 @@ const HomeHeader = () => {
                   <div style={{ backgroundColor: '#0e1136' }} className="row d-flex align-items-center">
                      <div className="col-xl-6 offset-xl-1 col-lg-6 offset-lg-1 col-md-7 offset-md-1">
                         <div className="header-info">
-                           <span style={{ color: 'white' }}><i className="fas fa-phone"></i> (010) 48-21-51</span>
+                           <span style={{ color: 'white' }}><i className="fas fa-phone"></i> (010) 58-27-11</span>
                            <span style={{ color: 'white' }}><i className="fas fa-envelope"></i> policlinik17@mail.ru</span>
                         </div>
                      </div>

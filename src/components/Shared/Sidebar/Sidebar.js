@@ -27,26 +27,26 @@ const Sidebar = ({ show, handleClose }) => {
 
                   <Collapsible trigger={Home} triggerTagName="div"
                      triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
-                    
+
                   </Collapsible>
 
                   <Collapsible trigger={Department} triggerTagName="div"
                      triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
-                     
+
                   </Collapsible>
 
                   <Collapsible trigger={Doctors} triggerTagName="div"
                      triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
-                     
+
                   </Collapsible>
                   <Collapsible trigger={About} triggerTagName="div"
                      triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
-                     
+
                   </Collapsible>
 
                   <Collapsible trigger={Contact} triggerTagName="div"
                      triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
-                     
+
                   </Collapsible>
 
 

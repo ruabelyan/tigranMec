@@ -57,7 +57,7 @@ const HomeSIngleService = ({ icon, title, border_class }) => {
                </div>
                <div className="service-content">
                   <h4 style={titleStyles}>
-                     <Link to="/servicesDetails" style={linkStyles}>{title}</Link>
+                     {title}
                   </h4>
                   <p style={paragraphStyles}>
                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.

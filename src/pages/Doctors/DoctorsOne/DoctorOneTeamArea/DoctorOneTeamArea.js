@@ -34,7 +34,7 @@ const doctors = [
     { image: "27", title: "Մարտիրոսյան Աննա", subtitle: "" },
     { image: "28", title: "Մարտիրոսյան Գայանե", subtitle: "Թերապևտ" },
     { image: "29", title: "Միրզոյան Նարինե", subtitle: "դիագնոստիկ" },
-    { image: "30", title: "Միքայելյան Նաիրա", subtitle: "Մանկաբույժ" },
+    { image: "31", title: "Միքայելյան Նաիրա", subtitle: "Մանկաբույժ" },
     { image: "31", title: "Մկրտչյան Մերի", subtitle: "" },
     { image: "32", title: "Մոսինյան Արևիկ", subtitle: "Իմունոլոգ" },
     { image: "33", title: "Մուշեղ Ստեփանյան", subtitle: "" },
@@ -152,7 +152,7 @@ const DoctorOneTeamArea = () => {
                                 <div className="row">
                                     <div className="col-12">
                                         <div className="team-title">
-                                            <h2 className='pb-3'>{t('Տիգրան Մեծի բաժանմունք')}</h2>
+                                            <h2 className='pb-3'>{t('Տիգրան Մեծ ԱԿ')}</h2>
                                         </div>
                                     </div>
                                     {tigranDoctors.map((doctor, index) => (
@@ -170,7 +170,7 @@ const DoctorOneTeamArea = () => {
                                 <div className="row">
                                     <div className="col-12">
                                         <div className="team-title">
-                                            <h2 className='pb-3'>{t('Սարի Թաղի բաժանմունք')}</h2>
+                                            <h2 className='pb-3'>{t('Սարի Թաղ ստորաբաժանում')}</h2>
                                         </div>
                                     </div>
                                     {sariDoctors.map((doctor, index) => (

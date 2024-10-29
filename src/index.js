@@ -133,6 +133,7 @@ i18n
       },
       hy: {
         translation: {
+          "price_list_key": "Գնացուցակ",
           "services_description_key": "Ծառայությունների բնութագիրը",
           "home_key": "Գլխավոր",
           "department_key": "Ծառայություններ",
@@ -159,7 +160,7 @@ i18n
           "our_team_key": "Մեր թիմը",
           "expert_doctors_key": "Փորձառու բժիշկներ",
           "problem_solve_key": "Գոհ բուժառուներ",
-          "award_winner_key": "Պարգևակրող",
+          "award_winner_key": "Սերտիֆիկատներ",
           "short_story_clinic_key": "Կարճ պատմություն Տիգրան Մեծ ԱԿ-ի կլինիկայի մասին։",
           "manage_healthcare_key": "Ձեր առողջապահական ծառայությունների կառավարում",
           "satisfied_patients_key": "Գոհ հիվանդներ",
