@@ -20,7 +20,7 @@ const HomeThreeNavBar = () => {
                   <div className={"row align-items-center"}>
                      <div className="col-xl-4 col-lg-4 col-md-6 col-6">
                         <div className="logo logo-3 pos-rel">
-                           <Link to="/"><img height={80} src="img/logo/logo.png" alt="" /></Link>
+                           <Link to="/"><img height={80} src="../img/logo/logo.png" alt="" /></Link>
                         </div>
                      </div>
                      <div className='col-6 d-lg-none'>
@@ -58,7 +58,7 @@ const HomeThreeNavBar = () => {
                         </div>
                         <div className="header-cta-info header-cta-info-3 d-flex f-left">
                            <div className="header-cta-icon">
-                              <img height={25} width={25} src="img/cta/message-icon.svg" alt="" />
+                              <img height={25} width={25} src="../img/cta/message-icon.svg" alt="" />
                            </div>
                            <div className="header-cta-text">
                               <h5 className="theme-color">{t('email_address_key')}</h5>
@@ -67,7 +67,7 @@ const HomeThreeNavBar = () => {
                         </div>
                         <div className="header-cta-info header-cta-info-3 d-flex f-left">
                            <div className="header-cta-icon">
-                              <img height={25} width={25} src="img/cta/phone-icon.svg" alt="" />
+                              <img height={25} width={25} src="../img/cta/phone-icon.svg" alt="" />
                            </div>
                            <div className="header-cta-text">
                               <h5 className="theme-color">{t('phone_number_key')}</h5>
