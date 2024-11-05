@@ -20,7 +20,7 @@ const HomeThreeNavBar = () => {
                   <div className={"row align-items-center"}>
                      <div className="col-xl-4 col-lg-4 col-md-6 col-6">
                         <div className="logo logo-3 pos-rel">
-                           <Link to="/"><img height={80} src="../img/logo/logo.png" alt="" /></Link>
+                           <Link to="/"><img style={{ maxHeight: 80 }} src="../img/logo/logo.png" alt="" /></Link>
                         </div>
                      </div>
                      <div className='col-6 d-lg-none'>

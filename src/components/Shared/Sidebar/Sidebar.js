@@ -13,6 +13,7 @@ const Sidebar = ({ show, handleClose }) => {
    const Doctors = <NavLink to="/doctors">{t("doctors_key")}</NavLink>
    const About = <NavLink to="/about">{t("about_us_key")}</NavLink>
    const Contact = <NavLink to="/contact">{t("contact_key")}</NavLink>
+   const PriceList = <NavLink to="/priceList">{t("Գնացուցակ")}</NavLink>
    // const Pages = <a href="#">Pages</a>
    return (
       <>
@@ -50,10 +51,10 @@ const Sidebar = ({ show, handleClose }) => {
                   </Collapsible>
 
 
-                  {/* <Collapsible trigger={Shop} triggerTagName="div"
+                  <Collapsible trigger={PriceList} triggerTagName="div"
                      triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
-                   
-                  </Collapsible> */}
+
+                  </Collapsible>
 
                   {/* <Collapsible trigger={News} triggerTagName="div"
                      triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
