@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import HomeSIngleService from '../../../../components/HomeSIngleService/HomeSIngleService';
 import { useTranslation } from 'react-i18next';
 
@@ -76,7 +76,7 @@ const ServicesOneABout = () => {
          <section className="about-area pt-120 pb-90">
             <div className="container">
                <div className="row ">
-                  <div className="col-xl-6 col-lg-6 col-md-12">
+                  <div className="col-xl-12 col-lg-12 col-md-12">
                      <div className="section-title section-title-m-0 pos-rel mb-50 text-end">
                         <div className="section-icon">
                            <img className="section-back-icon back-icon-right" src="img/section/section-back-icon.png" alt="" />
@@ -87,7 +87,7 @@ const ServicesOneABout = () => {
                         </div>
                      </div>
                   </div>
-                  <div className="col-xl-6 col-lg-6 col-md-12">
+                  {/* <div className="col-xl-6 col-lg-6 col-md-12">
                      <div className="facalty-text mb-50">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -96,7 +96,7 @@ const ServicesOneABout = () => {
                            qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
                            omnis iste natus error sit voluptatem accusantium.</p>
                      </div>
-                  </div>
+                  </div> */}
                </div>
                <div className="col-12">
                   <div className="team-search mb-30">
