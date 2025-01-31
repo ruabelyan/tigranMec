@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import HomeSingleTeam from '../../../../components/HomeSingleTeam/HomeSingleTeam';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
@@ -57,7 +56,18 @@ const doctors = [
 
     // Department 6: Radiology
     { image: "36", title: "Հասմիկ Կարապետյան", subtitle: "Ռենտգենոլոգ" },
-    { image: "35", title: "Մուշեղ Ստեփանյան", subtitle: "Ռենտգենոլոգ" }
+    { image: "35", title: "Մուշեղ Ստեփանյան", subtitle: "Ռենտգենոլոգ" },
+    //sari tahg
+    { image: "47", "title": "Անահիտ Հարությունյան", "subtitle": "Ներզատաբան" },
+    { image: "48", "title": "Անդռեյ Դանիելյան", "subtitle": "վիրաբույժ" },
+    { image: "49", "title": "Արմինե Ամիրյան", "subtitle": "Թերապևտ" },
+    { image: "50", "title": "Էմմա Սարգսյան", "subtitle": "Բժիշկ լաբորանտ" },
+    { image: "51", "title": "Լևոն Քոթանջյան", "subtitle": "Թերապևտ" },
+    { image: "52", "title": "Մարի Հարությունյան", "subtitle": "Թերապևտ" },
+    { image: "53", "title": "Մկրտչյան Ռուզաննա", "subtitle": "Գինեկոլոգ" },
+    { image: "54", "title": "Սաթենիկ Փանդունց", "subtitle": "ակնաբույժ" },
+    { image: "55", "title": "Սահակյան Նունե", "subtitle": "Մանկաբույժ" },
+    { image: "56", "title": "Վերոնիկա Ջինանյան", "subtitle": "Մանկաբույժ" }
 ];
 
 const DoctorOneTeamArea = () => {
@@ -85,8 +95,8 @@ const DoctorOneTeamArea = () => {
     // Split doctors into departments based on their indices
     const middleIndex = Math.ceil(filteredDoctors.length / 2); // Split at the middle dynamically
 
-    const tigranDoctors = filteredDoctors.slice(0, middleIndex);
-    const sariDoctors = filteredDoctors.slice(middleIndex);
+    const tigranDoctors = filteredDoctors.slice(0, 43);
+    const sariDoctors = filteredDoctors.slice(43);
     return (
         <>
             <section className="team-area pt-115 pb-55">
