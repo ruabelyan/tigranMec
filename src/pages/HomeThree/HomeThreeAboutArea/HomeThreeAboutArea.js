@@ -19,6 +19,7 @@ const HomeThreeAboutArea = () => {
                   </div>
                   <div className="col-xl-6 col-lg-6">
                      <div className="about-right-content">
+                        <h5 style={{ padding: 10 }}>«Տիգրան Մեծ» ԱԿ կողմից բնակչությանը տրամադրվում է պետության կողմից երաշխավորված անվճար արտահիվանդանոցային բժշկական օգնություն և սպասարկում համաձայն ՀՀ կառավարության 318-Ն որոշման:</h5>
                         <p>{t('tm_free_medical_care')}</p>
                      </div>
                   </div>
