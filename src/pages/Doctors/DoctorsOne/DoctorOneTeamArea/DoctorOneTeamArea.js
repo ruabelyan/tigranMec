@@ -83,9 +83,10 @@ const DoctorOneTeamArea = () => {
     };
 
     // Split doctors into departments based on their indices
-    const tigranDoctors = filteredDoctors.slice(0, 43);
-    const sariDoctors = filteredDoctors.slice(43);
+    const middleIndex = Math.ceil(filteredDoctors.length / 2); // Split at the middle dynamically
 
+    const tigranDoctors = filteredDoctors.slice(0, middleIndex);
+    const sariDoctors = filteredDoctors.slice(middleIndex);
     return (
         <>
             <section className="team-area pt-115 pb-55">

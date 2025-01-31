@@ -7,7 +7,8 @@ const HomeHeroSingleSlide = ({ bg_className }) => {
       <>
          <div
             // style={{ backgroundImage: 'url("")' }}
-            className={`single-slider slider-height d-flex align-items-center slider_bg_${bg_className}`}>
+            className={`single-slider slider-height d-flex align-items-center slider_bg_${bg_className}`}
+         >
             <div className="container">
                <div className="row">
                   <div className="col-xl-6 col-lg-8 col-md-10">
@@ -15,7 +16,7 @@ const HomeHeroSingleSlide = ({ bg_className }) => {
                         <div className="hero-slider-caption ">
                            <h5>{t('hero_care')}</h5>
                            <h1>{t("tm_health_center")}</h1>
-                           <p>{t('tm_free_medical_care')}</p>
+                           {/* <p>{t('tm_free_medical_care')}</p> */}
                         </div>
                      </div>
                   </div>

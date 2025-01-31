@@ -18,10 +18,13 @@ const CommonSectionArea = ({ area_header }) => {
                            <h1>{t("short_story_clinic_key")}</h1>
                         </div>
                         <div className="about-text mb-50">
-                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                              cupidatat non proident, sunt in culpa qui officia.</p>
-                        </div>
+                           <p>
+                              Երևանի «Տիգրան Մեծ» ԱԿ ՓԲԸ հիմնադրվել է 1959 թվականին և հանդիսանում է
+                              «Թիվ 17 պոլիկլինիկա» ՓԲԸ-ի իրավահաջորդը։ 2022 թվականին վերանվանված
+                              «Տիգրան Մեծ» ԱԿ-ի մեծ թիմին միացավ «Սարի Թաղ պոլիկլինիկա» ՓԲԸ-ն՝ որպես ստորաբաժանում,
+                              որը գործում է Էրեբունի վարչական շրջանում, Սարի Թաղ 10-րդ փողոց, 11 շենք հասցեում։
+                              Ունենալով երկար տարիների փորձ՝ մենք քայլում ենք ժամանակին համընթաց։
+                           </p>                        </div>
                         <div className="our-destination">
                            <div className="single-item mb-30">
                               <div className="mv-icon f-left">
@@ -29,8 +32,7 @@ const CommonSectionArea = ({ area_header }) => {
                               </div>
                               <div className="mv-title fix">
                                  <h3>{t("our_mission_key")}</h3>
-                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse.</p>
+                                 <p>ՁԵՐ ԱՌՈՂՋՈՒԹՅՈՒՆԸ ՄԵՐ  ՀԱՋՈՂՈՒԹՅՈՒՆՆ Է</p>
                               </div>
                            </div>
                            <div className="single-item">
@@ -39,8 +41,7 @@ const CommonSectionArea = ({ area_header }) => {
                               </div>
                               <div className="mv-title fix">
                                  <h3>{t("our_vision_key")}</h3>
-                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse.</p>
+                                 <p>Երևան քաղաքի բնակչությանը որակյալ,արդյունավետ բժշկական օգնություն ցուցաբերելն է</p>
                               </div>
                            </div>
                         </div>

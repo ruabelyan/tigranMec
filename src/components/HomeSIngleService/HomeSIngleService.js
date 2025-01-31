@@ -60,7 +60,7 @@ const HomeSIngleService = ({ icon, title, border_class }) => {
                      {title}
                   </h4>
                   <p style={paragraphStyles}>
-                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                     {/*Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. */}
                   </p>
                   {/* <Link className="service-link" to="/servicesDetails" style={linkStyles}>
                      {t('read_more_key')}
