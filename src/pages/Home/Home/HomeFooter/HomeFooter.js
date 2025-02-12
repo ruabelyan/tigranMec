@@ -79,7 +79,7 @@ const HomeFooter = () => {
                         <div className="row">
                             <div className="col-xl-12">
                                 <div className="footer-copyright text-center">
-                                    <p className="white-color">Copyright by@ rubabelyan - 2024</p>
+                                    <p className="white-color">Copyright by@ rubabelyan - 2025</p>
                                 </div>
                             </div>
                         </div>

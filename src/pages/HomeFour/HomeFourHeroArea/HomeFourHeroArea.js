@@ -1,10 +1,9 @@
-import React from 'react';
 import Slider from "react-slick";
 import HomeFourSingleHeroSlide from '../../../components/HomeFourSingleHeroSlide/HomeFourSingleHeroSlide';
 import useGlobalContext from '../../../hooks/useGlobalContext';
 
 const HomeFourHeroArea = () => {
-   const { SlickArrowLeft, SlickArrowRight} = useGlobalContext();
+   const { SlickArrowLeft, SlickArrowRight } = useGlobalContext();
 
    const settings = {
       autoplay: false,
@@ -12,8 +11,8 @@ const HomeFourHeroArea = () => {
       dots: false,
       fade: true,
       arrows: true,
-      prevArrow: <SlickArrowLeft/>,
-      nextArrow: <SlickArrowRight/>,
+      prevArrow: <SlickArrowLeft />,
+      nextArrow: <SlickArrowRight />,
       slidesToShow: 1,
       slidesToScroll: 1,
       responsive: [
@@ -43,36 +42,36 @@ const HomeFourHeroArea = () => {
          }
       ]
    };
-    return (
-        <>
-          <section className="hero-area">
-             <div className="hero-slider">
+   return (
+      <>
+         <section className="hero-area">
+            <div className="hero-slider">
 
-                <Slider className='slider-active' {...settings}>
+               <Slider className='slider-active' {...settings}>
 
-                   <div className="single-slider h4slider-bg pos-rel d-flex align-items-center pl-55">
+                  <div className="single-slider h4slider-bg pos-rel d-flex align-items-center pl-55">
 
-                      <div className="container-fluid">
-                         <div className="row">
-                            <HomeFourSingleHeroSlide />
-                         </div>
-                      </div>
-                   </div>
+                     <div className="container-fluid">
+                        <div className="row">
+                           <HomeFourSingleHeroSlide />
+                        </div>
+                     </div>
+                  </div>
 
-                   <div className="single-slider h4slider-bg pos-rel d-flex align-items-center pl-55">
-                      <div className="container-fluid">
-                         <div className="row">
-                            <HomeFourSingleHeroSlide />
-                         </div>
-                      </div>
-                   </div>
+                  <div className="single-slider h4slider-bg pos-rel d-flex align-items-center pl-55">
+                     <div className="container-fluid">
+                        <div className="row">
+                           <HomeFourSingleHeroSlide />
+                        </div>
+                     </div>
+                  </div>
 
-                </Slider>
+               </Slider>
 
-             </div>
-          </section>
-        </>
-    );
+            </div>
+         </section>
+      </>
+   );
 };
 
 export default HomeFourHeroArea;

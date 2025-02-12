@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import useGlobalContext from '../../../hooks/useGlobalContext';
@@ -11,8 +10,8 @@ const HomeFiveHeroSlider = () => {
       dots: false,
       fade: true,
       arrows: true,
-      prevArrow: <SlickArrowLeft/>,
-      nextArrow: <SlickArrowRight/>,
+      prevArrow: <SlickArrowLeft />,
+      nextArrow: <SlickArrowRight />,
       slidesToShow: 1,
       slidesToScroll: 1,
       responsive: [

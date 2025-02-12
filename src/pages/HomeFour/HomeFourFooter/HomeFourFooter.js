@@ -82,7 +82,7 @@ const HomeFourFooter = () => {
                   <div className="row">
                      <div className="col-xl-12">
                         <div className="footer-copyright footer-copyright-3 text-center">
-                           <p>Copyright by@ rubabelyan - 2024</p>
+                           <p>Copyright by@ rubabelyan - 2025</p>
                         </div>
                      </div>
                   </div>
