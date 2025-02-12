@@ -18,9 +18,7 @@ const CommonSectionArea = ({ area_header }) => {
                            <h1>{t("short_story_clinic_key")}</h1>
                         </div>
                         <div className="about-text mb-50">
-                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                              cupidatat non proident, sunt in culpa qui officia.</p>
+                           <p>Պոլիկլինիկան հիմնադրվել է 1959թվականին և կոչվել է {'<<'}Թիվ 17պոլիկլինիկա{'>>'} ՓԲԸ։ 2024թ.-ին վերանվանվել է {'<'}Տիգրան Մեծ{'>'}ԱԿ</p>
                         </div>
                         <div className="our-destination">
                            <div className="single-item mb-30">
@@ -29,8 +27,7 @@ const CommonSectionArea = ({ area_header }) => {
                               </div>
                               <div className="mv-title fix">
                                  <h3>{t("our_mission_key")}</h3>
-                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse.</p>
+                                 <p>ՁԵՐ ԱՌՈՂՋՈՒԹՅՈՒՆԸ ՄԵՐ  ՀԱՋՈՂՈՒԹՅՈՒՆՆ Է</p>
                               </div>
                            </div>
                            <div className="single-item">
@@ -39,8 +36,7 @@ const CommonSectionArea = ({ area_header }) => {
                               </div>
                               <div className="mv-title fix">
                                  <h3>{t("our_vision_key")}</h3>
-                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse.</p>
+                                 <p>Երևան քաղաքի բնակչությանը որակյալ,արդյունավետ բժշկական օգնություն ցուցաբերելն է</p>
                               </div>
                            </div>
                         </div>

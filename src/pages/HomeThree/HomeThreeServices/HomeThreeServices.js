@@ -36,8 +36,8 @@ const HomeThreeServices = () => {
                   <ServicesTwoSingleItem icon='2' image="2" title={t("Մանկական բաժանմունք")} about='Երեխաների առողջության մասին հոգ տանելը առաջնահերթություն է յուրաքանչյուր ծնողի համար։' />
                   <ServicesTwoSingleItem icon='3' image="3" title={t("Գինեկոլոգիական բաժանմունք")} about='Գինեկոլոգիական բաժանմունքում իրականացվում է գինեկոլոգիական հիվանդությունների վիրահատական և կոնսերվատիվ բուժում:' />
                   <ServicesTwoSingleItem icon='4' image="4" title={t("Լաբորատոր բաժանմունք")} about='Լաբորատոր բաժանմունքի ստորաբաժանումներում կատարվում են տարբեր ախտաբանական վիճակների ժամանակ սպիտակուցային, ածխաջրատային,' />
-                  <ServicesTwoSingleItem icon='5' image="5" title={t("Նեղ մասնագիտական բաժանմունք")} about=' lorem ipsu dolor' />
-                  <ServicesTwoSingleItem icon='6' image="6" title={t("Ռենտգենոլոգիական բաժանմունք")} about='lorem ipsu dolor' />
+                  <ServicesTwoSingleItem icon='5' image="5" title={t("Նեղ մասնագիտական բաժանմունք")} about='' />
+                  <ServicesTwoSingleItem icon='6' image="6" title={t("Ռենտգենոլոգիական բաժանմունք")} about='' />
 
                </div>
 
