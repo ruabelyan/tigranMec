@@ -230,7 +230,7 @@ i18n
           our_mission_key: "Մեր առաքելությունը",
           our_vision_key: "Մեր տեսլականը",
           worldwide_branches_key: "Համաշխարհային մասնաճյուղեր",
-          hospital_formed_key: "lorem ipsum",
+          hospital_formed_key: "test",
           local_partners_key: "Տեղական գործընկերներ",
           testimonials_key: "Մեկնաբանություններ",
           our_clients_say_about_us_key: "Մեր հաճախորդները ասում են մեր մասին",
