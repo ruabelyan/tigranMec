@@ -3,71 +3,79 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
 const doctors = [
-    // Department 1: Therapeutic
-    { image: "18", title: "Ժաննա Պապոյան", subtitle: "Թերապևտիկ բաժնի վարիչ" },
-    { image: "1", title: "Ալիդա Կարախանյան", subtitle: "Թերապևտ" },
-    { image: "2", title: "Ալվարդ Գևորգյան", subtitle: "Թերապևտ" },
-    { image: "7", title: "Բելլա Արզումանյան", subtitle: "Թերապևտ" },
-    { image: "12", title: "Գոհար Ռստակյան", subtitle: "Թերապևտ" },
-    { image: "17", title: "Թեհմինե Գալստյան", subtitle: "Թերապևտ" },
-    { image: "21", title: "Իրինա Գասպարյան", subtitle: "Թերապևտ" },
-    { image: "27", title: "Մարիամ Միքայելյան", subtitle: "Թերապևտ" },
-    { image: "29", title: "Մարտիրոսյան Գայանե", subtitle: "Թերապևտ" },
-    { image: "43", title: "Սուսաննա Գրիգորյան", subtitle: "Թերապևտ" },
+  // Department 1: Therapeutic
+  { image: "18", title: "Ժաննա Պապոյան", subtitle: "Թերապևտիկ բաժնի վարիչ" },
+  { image: "1", title: "Ալիդա Կարախանյան", subtitle: "Թերապևտ" },
+  { image: "2", title: "Ալվարդ Գևորգյան", subtitle: "Թերապևտ" },
+  { image: "7", title: "Բելլա Արզումանյան", subtitle: "Թերապևտ" },
+  { image: "12", title: "Գոհար Ռստակյան", subtitle: "Թերապևտ" },
+  { image: "17", title: "Թեհմինե Գալստյան", subtitle: "Թերապևտ" },
+  // { image: "21", title: "Իրինա Գասպարյան", subtitle: "Թերապևտ" },
+  { image: "27", title: "Մարիամ Միքայելյան", subtitle: "Թերապևտ" },
+  { image: "29", title: "Մարտիրոսյան Գայանե", subtitle: "Թերապևտ" },
+  { image: "43", title: "Սուսաննա Գրիգորյան", subtitle: "Թերապևտ" },
 
-    // Department 2: Pediatric and Family Medicine
-    { image: "5", title: "Ասոյան Արմինե", subtitle: "Մանկաբույժ" },
-    { image: "6", title: "Արմենուհի Դավիդովա", subtitle: "Ընտանեկան բժիշկ" },
-    { image: "16", title: "Զաքարյան Գոհար", subtitle: "Մանկաբույժ" },
-    { image: "24", title: "Հակոբյան Լիլիթ", subtitle: "Մանկաբույժ" },
-    { image: "31", title: "Միքայելյան Նաիրա", subtitle: "Մանկաբույժ" },
-    { image: "34", title: "Մոսինյան Արևիկ", subtitle: "Իմունականխարգելման կաբինետի բժիշկ" },
-    { image: "38", title: "Պայծառ Ուրգանջյան", subtitle: "Ընտանեկան բժիշկ" },
-    { image: "45", title: "Տիտանյան Նունե", subtitle: "Ընտանեկան բժիշկ" },
+  // Department 2: Pediatric and Family Medicine
+  { image: "5", title: "Ասոյան Արմինե", subtitle: "Մանկաբույժ" },
+  { image: "6", title: "Արմենուհի Դավիդովա", subtitle: "Ընտանեկան բժիշկ" },
+  { image: "16", title: "Զաքարյան Գոհար", subtitle: "Մանկաբույժ" },
+  // { image: "24", title: "Հակոբյան Լիլիթ", subtitle: "Մանկաբույժ" },
+  { image: "31", title: "Միքայելյան Նաիրա", subtitle: "Մանկաբույժ" },
+  {
+    image: "34",
+    title: "Մոսինյան Արևիկ",
+    subtitle: "Իմունականխարգելման կաբինետի բժիշկ",
+  },
+  { image: "38", title: "Պայծառ Ուրգանջյան", subtitle: "Ընտանեկան բժիշկ" },
+  { image: "45", title: "Տիտանյան Նունե", subtitle: "Ընտանեկան բժիշկ" },
 
-    // Department 3: Gynecology
-    { image: "15", title: "Ելենա Խդրյան", subtitle: "Գինեկոլոգ" },
-    { image: "33", title: "Ղուկասյան Լուսինե", subtitle: "Գինեկոլոգ" },
-    { image: "28", title: "Մարտիրոսյան Աննա", subtitle: "Գինեկոլոգ" },
-    { image: "32", title: "Մկրտչյան Մերի", subtitle: "Գինեկոլոգ" },
-    { image: "41", title: "Սնդոյան Անուշ", subtitle: "Գինեկոլոգ" },
+  // Department 3: Gynecology
+  { image: "15", title: "Ելենա Խդրյան", subtitle: "Գինեկոլոգ" },
+  { image: "33", title: "Ղուկասյան Լուսինե", subtitle: "Գինեկոլոգ" },
+  { image: "28", title: "Մարտիրոսյան Աննա", subtitle: "Գինեկոլոգ" },
+  { image: "32", title: "Մկրտչյան Մերի", subtitle: "Գինեկոլոգ" },
+  // { image: "41", title: "Սնդոյան Անուշ", subtitle: "Գինեկոլոգ" },
 
-    // Department 4: Laboratory
-    { image: "11", title: "Գոհար Բաբայան", subtitle: "Լաբորատորիայի բաժնի վարիչ" },
-    { image: "13", title: "Գոհար Սարգսյան", subtitle: "Բժիշկ լաբորանտ" },
-    { image: "26", title: "Մարգարիտ Գևորգյան", subtitle: "Բժիշկ լաբորանտ" },
-    { image: "39", title: "Ջուլիետա Սարդարյան", subtitle: "Բժիշկ մանրէաբան" },
+  // Department 4: Laboratory
+  {
+    image: "11",
+    title: "Գոհար Բաբայան",
+    subtitle: "Լաբորատորիայի բաժնի վարիչ",
+  },
+  { image: "13", title: "Գոհար Սարգսյան", subtitle: "Բժիշկ լաբորանտ" },
+  { image: "26", title: "Մարգարիտ Գևորգյան", subtitle: "Բժիշկ լաբորանտ" },
+  { image: "39", title: "Ջուլիետա Սարդարյան", subtitle: "Բժիշկ մանրէաբան" },
 
-    // Department 5: Various Specialists
-    { image: "3", title: "Անուշ Խանգուլյան", subtitle: "Օնկոլոգ" },
-    { image: "4", title: "Առաքելյան Էդգար", subtitle: "Մաշկաբան" },
-    { image: "9", title: "Գայանե Ղալամքարյան", subtitle: "Սրտաբան" },
-    { image: "10", title: "Գյուրջյան Իսահակ", subtitle: "Մանկական վիրաբույժ" },
-    { image: "14", title: "Դավթյան Գագիկ", subtitle: "Վիրաբույժ" },
-    { image: "19", title: "Ինգա Սաֆարյան", subtitle: "Սոնոգրաֆիստ" },
-    { image: "20", title: "Իռեն Առաքելովա", subtitle: "Նյարդաբան" },
-    { image: "22", title: "Կարինե Բադանյան", subtitle: "Սոնոգրաֆիստ" },
-    { image: "23", title: "Կարինե Սրապիոնյան", subtitle: "Մանկական նյարդաբան" },
-    { image: "30", title: "Միրզոյան Նարինե", subtitle: "Դիագնոստիկ" },
-    { image: "37", title: "Մուշեղյան Անահիտ", subtitle: "Ֆիզիոթերապիա" },
-    { image: "40", title: "Սեդա Հովհաննիսյան", subtitle: "ՔԿԱ" },
-    { image: "42", title: "Սոնա Զաքարյան", subtitle: "ՔԿԱ" },
-    { image: "46", title: "Օհանյան Արմեն", subtitle: "Ինֆեկցիոնիստ" },
+  // Department 5: Various Specialists
+  { image: "3", title: "Անուշ Խանգուլյան", subtitle: "Օնկոլոգ" },
+  { image: "4", title: "Առաքելյան Էդգար", subtitle: "Մաշկաբան" },
+  { image: "9", title: "Գայանե Ղալամքարյան", subtitle: "Սրտաբան" },
+  { image: "10", title: "Գյուրջյան Իսահակ", subtitle: "Մանկական վիրաբույժ" },
+  { image: "14", title: "Դավթյան Գագիկ", subtitle: "Վիրաբույժ" },
+  { image: "19", title: "Ինգա Սաֆարյան", subtitle: "Սոնոգրաֆիստ" },
+  { image: "20", title: "Իռեն Առաքելովա", subtitle: "Նյարդաբան" },
+  { image: "22", title: "Կարինե Բադանյան", subtitle: "Սոնոգրաֆիստ" },
+  { image: "23", title: "Կարինե Սրապիոնյան", subtitle: "Մանկական նյարդաբան" },
+  { image: "30", title: "Միրզոյան Նարինե", subtitle: "Դիագնոստիկ" },
+  { image: "37", title: "Մուշեղյան Անահիտ", subtitle: "Ֆիզիոթերապիա" },
+  { image: "40", title: "Սեդա Հովհաննիսյան", subtitle: "ՔԿԱ" },
+  { image: "42", title: "Սոնա Զաքարյան", subtitle: "ՔԿԱ" },
+  // { image: "46", title: "Օհանյան Արմեն", subtitle: "Ինֆեկցիոնիստ" },
 
-    // Department 6: Radiology
-    { image: "36", title: "Հասմիկ Կարապետյան", subtitle: "Ռենտգենոլոգ" },
-    { image: "35", title: "Մուշեղ Ստեփանյան", subtitle: "Ռենտգենոլոգ" },
-    //sari tahg
-    { image: "47", "title": "Անահիտ Հարությունյան", "subtitle": "Ներզատաբան" },
-    { image: "48", "title": "Անդռեյ Դանիելյան", "subtitle": "վիրաբույժ" },
-    { image: "49", "title": "Արմինե Ամիրյան", "subtitle": "Թերապևտ" },
-    { image: "50", "title": "Էմմա Սարգսյան", "subtitle": "Բժիշկ լաբորանտ" },
-    { image: "51", "title": "Լևոն Քոթանջյան", "subtitle": "Թերապևտ" },
-    { image: "52", "title": "Մարի Հարությունյան", "subtitle": "Թերապևտ" },
-    { image: "53", "title": "Մկրտչյան Ռուզաննա", "subtitle": "Գինեկոլոգ" },
-    { image: "54", "title": "Սաթենիկ Փանդունց", "subtitle": "ակնաբույժ" },
-    { image: "55", "title": "Սահակյան Նունե", "subtitle": "Մանկաբույժ" },
-    { image: "56", "title": "Վերոնիկա Ջինանյան", "subtitle": "Մանկաբույժ" }
+  // Department 6: Radiology
+  { image: "36", title: "Հասմիկ Կարապետյան", subtitle: "Ռենտգենոլոգ" },
+  { image: "35", title: "Մուշեղ Ստեփանյան", subtitle: "Ռենտգենոլոգ" },
+  //sari tahg
+  { image: "47", title: "Անահիտ Հարությունյան", subtitle: "Ներզատաբան" },
+  { image: "48", title: "Անդրեյ Դանիելյան", subtitle: "վիրաբույժ" },
+  { image: "49", title: "Արմինե Ամիրյան", subtitle: "Թերապևտ" },
+  { image: "50", title: "Էմմա Սարգսյան", subtitle: "Բժիշկ լաբորանտ" },
+  { image: "51", title: "Լևոն Քոթանջյան", subtitle: "Թերապևտ" },
+  { image: "52", title: "Մարի Հարությունյան", subtitle: "Թերապևտ" },
+  { image: "53", title: "Մկրտչյան Ռուզաննա", subtitle: "Գինեկոլոգ" },
+  { image: "54", title: "Սաթենիկ Փանդունց", subtitle: "ակնաբույժ" },
+  { image: "55", title: "Սահակյան Նունե", subtitle: "Մանկաբույժ" },
+  { image: "56", title: "Վերոնիկա Ջինանյան", subtitle: "Մանկաբույժ" },
 ];
 
 const DoctorOneTeamArea = () => {

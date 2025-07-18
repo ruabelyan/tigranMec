@@ -23,6 +23,10 @@ const AboutArea = () => {
               {/* <button onClick={() => setOpen(true)} className="popup-video about-video-btn white-video-btn">
                      <i className="fas fa-play"></i></button> */}
             </div>
+            <h3 className="m-4 text-center">
+              <strong>Տնօրեն՝ Սաթենիկ Բադալյան.</strong>
+            </h3>
+
             <div className="about-shape">
               <img src="img/about/about-shape.png" alt="" />
             </div>
