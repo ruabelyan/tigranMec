@@ -60,12 +60,11 @@ const doctors = [
   { image: "37", title: "Մուշեղյան Անահիտ", subtitle: "Ֆիզիոթերապիա" },
   { image: "40", title: "Սեդա Հովհաննիսյան", subtitle: "ՔԿԱ" },
   { image: "42", title: "Սոնա Զաքարյան", subtitle: "ՔԿԱ" },
-  // { image: "46", title: "Օհանյան Արմեն", subtitle: "Ինֆեկցիոնիստ" },
-
   // Department 6: Radiology
   { image: "36", title: "Հասմիկ Կարապետյան", subtitle: "Ռենտգենոլոգ" },
   { image: "35", title: "Մուշեղ Ստեփանյան", subtitle: "Ռենտգենոլոգ" },
-  //sari tahg
+];
+const sariDoctors = [
   { image: "47", title: "Անահիտ Հարությունյան", subtitle: "Ներզատաբան" },
   { image: "48", title: "Անդրեյ Դանիելյան", subtitle: "վիրաբույժ" },
   { image: "49", title: "Արմինե Ամիրյան", subtitle: "Թերապևտ" },
@@ -84,12 +83,6 @@ const DoctorOneTeamArea = () => {
   const [loading, setLoading] = useState(false);
 
   // Filter doctors based on the search query
-  const filteredDoctors = doctors.filter(
-    (doctor) =>
-      doctor.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (doctor.subtitle &&
-        doctor.subtitle.toLowerCase().includes(searchQuery.toLowerCase()))
-  );
 
   // Handle search change
   const handleSearchChange = (e) => {
@@ -104,8 +97,6 @@ const DoctorOneTeamArea = () => {
 
   // Split doctors into departments based on their indices
 
-  const tigranDoctors = filteredDoctors.slice(0, 43);
-  const sariDoctors = filteredDoctors.slice(43);
   return (
     <>
       <section className="team-area pt-115 pb-55">
@@ -167,45 +158,41 @@ const DoctorOneTeamArea = () => {
               </div>
             </div>
           </div>
-          {filteredDoctors.length > 0 && (
-            <>
-              {/* Render Tigran the Great Department only if it has doctors */}
-              {tigranDoctors.length > 0 && (
-                <div className="row">
-                  <div className="col-12">
-                    <div className="team-title">
-                      <h2 className="pb-3">{t("Տիգրան Մեծ ԱԿ")}</h2>
-                    </div>
-                  </div>
-                  {tigranDoctors.map((doctor, index) => (
-                    <HomeSingleTeam
-                      key={index}
-                      image={doctor.image}
-                      title={doctor.title}
-                      subtitle={doctor.subtitle}
-                    />
-                  ))}
+          {/* Render Tigran the Great Department only if it has doctors */}
+          {doctors.length > 0 && (
+            <div className="row">
+              <div className="col-12">
+                <div className="team-title">
+                  <h2 className="pb-3">{t("Տիգրան Մեծ ԱԿ")}</h2>
                 </div>
-              )}
-              {/* Render Sari Tagh Department only if it has doctors */}
-              {sariDoctors.length > 0 && (
-                <div className="row">
-                  <div className="col-12">
-                    <div className="team-title">
-                      <h2 className="pb-3">{t("Սարի Թաղ ստորաբաժանում")}</h2>
-                    </div>
-                  </div>
-                  {sariDoctors.map((doctor, index) => (
-                    <HomeSingleTeam
-                      key={index + 43} // Offset index for sariDoctors
-                      image={doctor.image}
-                      title={doctor.title}
-                      subtitle={doctor.subtitle}
-                    />
-                  ))}
+              </div>
+              {doctors.map((doctor, index) => (
+                <HomeSingleTeam
+                  key={index}
+                  image={doctor.image}
+                  title={doctor.title}
+                  subtitle={doctor.subtitle}
+                />
+              ))}
+            </div>
+          )}
+          {/* Render Sari Tagh Department only if it has doctors */}
+          {sariDoctors.length > 0 && (
+            <div className="row">
+              <div className="col-12">
+                <div className="team-title">
+                  <h2 className="pb-3">{t("Սարի Թաղ ստորաբաժանում")}</h2>
                 </div>
-              )}
-            </>
+              </div>
+              {sariDoctors.map((doctor, index) => (
+                <HomeSingleTeam
+                  key={index + 43} // Offset index for sariDoctors
+                  image={doctor.image}
+                  title={doctor.title}
+                  subtitle={doctor.subtitle}
+                />
+              ))}
+            </div>
           )}
         </div>
       </section>
