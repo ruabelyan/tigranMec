@@ -19,7 +19,7 @@ const doctors = [
   { image: "5", title: "Ասոյան Արմինե", subtitle: "Մանկաբույժ" },
   { image: "6", title: "Արմենուհի Դավիդովա", subtitle: "Ընտանեկան բժիշկ" },
   { image: "16", title: "Զաքարյան Գոհար", subtitle: "Մանկաբույժ" },
-  // { image: "24", title: "Հակոբյան Լիլիթ", subtitle: "Մանկաբույժ" },
+  { image: "24", title: "Աստինե Զաքարյան", subtitle: "Մանկաբույժ" },
   { image: "31", title: "Միքայելյան Նաիրա", subtitle: "Մանկաբույժ" },
   {
     image: "34",
