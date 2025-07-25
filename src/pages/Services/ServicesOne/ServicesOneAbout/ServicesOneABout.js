@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import HomeSIngleService from "../../../../components/HomeSIngleService/HomeSIngleService";
 import { useTranslation } from "react-i18next";
+import { Prev } from "react-bootstrap/esm/PageItem";
 
 const ServicesOneABout = () => {
   const { t } = useTranslation();
@@ -40,7 +41,7 @@ const ServicesOneABout = () => {
     "Էխոկարդիոգրաֆիա",
     "Ուլտրաձայնային հետազոտություն",
     "Գաստրոդուոդենոսկոպիա",
-    "Դուպլեքս",
+    "Ստորին և վերին վերջույթների դուպլեքս հետազոտություն",
     "Դոպլեր",
     "Սպիրոմետրիա",
     "Ավտոռեֆկերատոմետրիա",
@@ -51,11 +52,7 @@ const ServicesOneABout = () => {
     "Իմպենդանսոմետրիա",
     "Ֆիբրոսկոպիա",
     "Հարքթային խոռոչների ուլտրաձայնային հետազոտություն",
-    "Կլինիկական",
-    "Կենսաքիմիական",
-    "Սերոլոգիական",
-    "Իմունուլոգիական",
-    "Մանրէաբանական",
+    "Լաբորատորիա",
   ];
 
   useEffect(() => {
@@ -123,9 +120,25 @@ const ServicesOneABout = () => {
           <h3 className="pb-3">{t("Ծառայություններ")}</h3>
           <div className="row">
             {filteredServices.length > 0 ? (
-              filteredServices.map((service, index) => (
-                <HomeSIngleService key={index} title={service} />
-              ))
+              filteredServices.map((service, index) => {
+                if (service === "Լաբորատորիա") {
+                  return (
+                    <>
+                      <HomeSIngleService
+                        key={index}
+                        title={service}
+                        subServices={[
+                          "Սերոլոգիական",
+                          "Կենսաքիմիական",
+                          " Մանրէաբանական",
+                          "Իմունոլոգիական",
+                        ]}
+                      />
+                    </>
+                  );
+                }
+                return <HomeSIngleService key={index} title={service} />;
+              })
             ) : (
               <p>{t("Որոնման արդյունքում տվյալներ չեն հայտնաբերվել")}</p>
             )}

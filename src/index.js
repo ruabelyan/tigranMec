@@ -236,7 +236,7 @@ i18n
           our_clients_say_about_us_key: "Մեր հաճախորդները ասում են մեր մասին",
           mail_here_key: "Էլ․ հասցե",
           visit_here_key: "Մեր հասցեն",
-          call_here_key: "Հեռախոսահամար",
+          call_here_key: "Հեռախոսահամարներ",
           anything_on_your_mind_key: "Ունե՞ք առաջարկ",
           estimate_your_idea_key: "Արժեքավորեք ձեր գաղափարը",
           your_name_key: "Անուն",

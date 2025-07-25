@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-const HomeSIngleService = ({ icon, title, border_class }) => {
+const HomeSIngleService = ({ icon, title, border_class, subServices }) => {
   const { t } = useTranslation();
   const serviceBoxStyles = {
     padding: "20px",
@@ -61,12 +61,18 @@ const HomeSIngleService = ({ icon, title, border_class }) => {
           </div>
           <div className="service-content">
             <h4 style={titleStyles}>{title}</h4>
-            <p style={paragraphStyles}>
-              {/*Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. */}
-            </p>
-            {/* <Link className="service-link" to="/servicesDetails" style={linkStyles}>
-                     {t('read_more_key')}
-                  </Link> */}
+
+            {subServices?.map((service) => {
+              return <p style={paragraphStyles}>{service}</p>;
+            })}
+
+            {/* <Link
+              className="service-link"
+              to="/servicesDetails"
+              style={linkStyles}
+            >
+              {t("read_more_key")}
+            </Link> */}
           </div>
         </div>
       </div>
