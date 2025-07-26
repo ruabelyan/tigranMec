@@ -20,7 +20,7 @@ const ServicesDetailsArea = (id) => {
       case "3":
         return (
           <div className="row">
-            <h2>Գինեկոլոգիական բաժանմունք</h2>
+            <h2>Գինեկոլոգիական բաժանմունքaaa</h2>
           </div>
         );
       case "4":
