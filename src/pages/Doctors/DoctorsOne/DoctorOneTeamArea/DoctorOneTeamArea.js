@@ -7,7 +7,6 @@ const doctors = [
   { image: "18", title: "Ժաննա Պապոյան", subtitle: "Թերապևտիկ բաժնի վարիչ" },
   { image: "1", title: "Ալիդա Կարախանյան", subtitle: "Թերապևտ" },
   { image: "2", title: "Ալվարդ Գևորգյան", subtitle: "Թերապևտ" },
-  { image: "7", title: "Բելլա Արզումանյան", subtitle: "Թերապևտ" },
   { image: "12", title: "Գոհար Ռստակյան", subtitle: "Թերապևտ" },
   { image: "17", title: "Թեհմինե Գալստյան", subtitle: "Թերապևտ" },
   // { image: "21", title: "Իրինա Գասպարյան", subtitle: "Թերապևտ" },
@@ -20,7 +19,6 @@ const doctors = [
   { image: "6", title: "Արմենուհի Դավիդովա", subtitle: "Ընտանեկան բժիշկ" },
   { image: "16", title: "Զաքարյան Գոհար", subtitle: "Մանկաբույժ" },
   { image: "24", title: "Աստինե Զաքարյան", subtitle: "Մանկաբույժ" },
-  { image: "31", title: "Միքայելյան Նաիրա", subtitle: "Մանկաբույժ" },
   {
     image: "34",
     title: "Մոսինյան Արևիկ",
@@ -48,7 +46,7 @@ const doctors = [
 
   // Department 5: Various Specialists
   { image: "3", title: "Անուշ Խանգուլյան", subtitle: "Օնկոլոգ" },
-  { image: "4", title: "Առաքելյան Էդգար", subtitle: "Մաշկաբան" },
+  { image: "57", title: "Կարեն Մարտիրոսյան", subtitle: "Մաշկաբան" },
   { image: "9", title: "Գայանե Ղալամքարյան", subtitle: "Սրտաբան" },
   { image: "10", title: "Գյուրջյան Իսահակ", subtitle: "Մանկական վիրաբույժ" },
   { image: "14", title: "Դավթյան Գագիկ", subtitle: "Վիրաբույժ" },
@@ -61,8 +59,8 @@ const doctors = [
   { image: "40", title: "Սեդա Հովհաննիսյան", subtitle: "ՔԿԱ" },
   { image: "42", title: "Սոնա Զաքարյան", subtitle: "ՔԿԱ" },
   // Department 6: Radiology
-  { image: "36", title: "Հասմիկ Կարապետյան", subtitle: "Ռենտգենոլոգ" },
   { image: "35", title: "Մուշեղ Ստեփանյան", subtitle: "Ռենտգենոլոգ" },
+  { image: "58", title: "Նուարդ Սարգսյան", subtitle: "Ռենտգենոլոգ" },
 ];
 const sariDoctors = [
   { image: "47", title: "Անահիտ Հարությունյան", subtitle: "Ներզատաբան" },

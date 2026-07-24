@@ -67,11 +67,6 @@ const ServicesDetailsArea = (id) => {
             />
             <HomeSingleTeam
               subtitle="Թերապևտ"
-              image="7"
-              title="Բելլա Արզումանյան"
-            />
-            <HomeSingleTeam
-              subtitle="Թերապևտ"
               image="12"
               title="Գոհար Ռստակյան"
             />
@@ -119,11 +114,6 @@ const ServicesDetailsArea = (id) => {
             <HomeSingleTeam
               image="24"
               title="Աստինե Զաքարյան"
-              subtitle="Մանկաբույժ"
-            />
-            <HomeSingleTeam
-              image="31"
-              title="Միքայելյան Նաիրա"
               subtitle="Մանկաբույժ"
             />
             <HomeSingleTeam
@@ -202,13 +192,8 @@ const ServicesDetailsArea = (id) => {
         return (
           <div className="row">
             <HomeSingleTeam
-              image="3"
-              title="Անուշ Խանգուլյան"
-              subtitle="Օնկոլոգ"
-            />
-            <HomeSingleTeam
-              image="4"
-              title="Առաքելյան Էդգար"
+              image="57"
+              title="Կարեն Մարտիրոսյան"
               subtitle="Մաշկաբան"
             />
             <HomeSingleTeam
@@ -274,13 +259,13 @@ const ServicesDetailsArea = (id) => {
           <div className="row">
             <HomeSingleTeam
               subtitle="Ռենտգենոլոգ"
-              image="36"
-              title="Հասմիկ Կարապետյան"
+              image="35"
+              title="Մուշեղ Ստեփանյան"
             />
             <HomeSingleTeam
               subtitle="Ռենտգենոլոգ"
-              image="35"
-              title="Մուշեղ Ստեփանյան"
+              image="58"
+              title="Նուարդ Սարգսյան"
             />
           </div>
         );
