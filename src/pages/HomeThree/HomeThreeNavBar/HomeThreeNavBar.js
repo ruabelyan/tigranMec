@@ -34,7 +34,7 @@ const HomeThreeNavBar = () => {
                            <div className="lang-icon">
                               <img height={30} width={30}
                                  src={i18n.language === 'hy' ?
-                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_Armenia.svg/2880px-Flag_of_Armenia.svg.png"
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_Armenia.svg/1920px-Flag_of_Armenia.svg.png"
                                     : i18n.language === 'ru' ? "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg" : "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_United_Kingdom.png"
                                  }
                                  alt="" />
