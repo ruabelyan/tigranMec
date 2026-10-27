@@ -17,6 +17,8 @@ const doctors = [
   { image: "12", title: "Գոհար Ռստակյան", subtitle: "Թերապևտ" },
   { image: "17", title: "Թեհմինե Գալստյան", subtitle: "Թերապևտ" },
   // { image: "21", title: "Իրինա Գասպարյան", subtitle: "Թերապևտ" },
+
+  
   { image: "27", title: "Մարիամ Միքայելյան", subtitle: "Թերապևտ" },
   { image: "29", title: "Մարտիրոսյան Գայանե", subtitle: "Թերապևտ" },
   { image: "43", title: "Սուսաննա Գրիգորյան", subtitle: "Թերապևտ" },
