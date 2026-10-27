@@ -6,8 +6,8 @@ const doctors = [
   // Department 1: Therapeutic
     { image: "64", title: "Սաթենիկ Վազգենի Բադալյան", subtitle: "Տնօրեն" },
   { image: "62", title: "Մարինե Մարգարյան", subtitle: "Բուժ գծով տեղակալ" },
-  { image: "60", title: "Գալընա Քեսյան", subtitle: "Փորձաքննության գծով տեշակալ" },
-  { image: "61", title: "Անահիտ Պիվազյան", subtitle: "Մանկության գծով փոխտնորեն" },
+  { image: "60", title: "Գալինա Քեսյան", subtitle: "Փորձաքննության գծով տեղակալ" },
+  { image: "61", title: "Անահիտ Պիվազյան", subtitle: "Մանկության գծով փոխտնօրեն" },
   { image: "63", title: "Շուշանիկ Գրիգորյան", subtitle: "Կանանց կոնսուլտացիայի վարիչ" },
   { image: "59", title: " Արուս Ոսկանյան", subtitle: "Դիագնոստիկ բաժնի վարիչ" },
 
@@ -18,7 +18,7 @@ const doctors = [
   { image: "17", title: "Թեհմինե Գալստյան", subtitle: "Թերապևտ" },
   // { image: "21", title: "Իրինա Գասպարյան", subtitle: "Թերապևտ" },
 
-  
+
   { image: "27", title: "Մարիամ Միքայելյան", subtitle: "Թերապևտ" },
   { image: "29", title: "Մարտիրոսյան Գայանե", subtitle: "Թերապևտ" },
   { image: "43", title: "Սուսաննա Գրիգորյան", subtitle: "Թերապևտ" },
