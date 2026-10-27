@@ -211,6 +211,13 @@
  .team-box:hover .h4team-thumb>img {
      border-color: #8fb569;
 }
+ .team-thumb img {
+     transition: transform .4s ease;
+     will-change: transform;
+}
+ .team-thumb img:hover {
+     transform: scale(1.08);
+}
  .h4team-social ul li a:hover {
      color: #952d3e;
 }

@@ -4,6 +4,13 @@ import { useState } from "react";
 
 const doctors = [
   // Department 1: Therapeutic
+    { image: "64", title: "Սաթենիկ Վազգենի Բադալյան", subtitle: "Տնօրեն" },
+  { image: "62", title: "Մարինե Մարգարյան", subtitle: "Բուժ գծով տեղակալ" },
+  { image: "60", title: "Գալընա Քեսյան", subtitle: "Փորձաքննության գծով տեշակալ" },
+  { image: "61", title: "Անահիտ Պիվազյան", subtitle: "Մանկության գծով փոխտնորեն" },
+  { image: "63", title: "Շուշանիկ Գրիգորյան", subtitle: "Կանանց կոնսուլտացիայի վարիչ" },
+  { image: "59", title: " Արուս Ոսկանյան", subtitle: "Դիագնոստիկ բաժնի վարիչ" },
+
   { image: "18", title: "Ժաննա Պապոյան", subtitle: "Թերապևտիկ բաժնի վարիչ" },
   { image: "1", title: "Ալիդա Կարախանյան", subtitle: "Թերապևտ" },
   { image: "2", title: "Ալվարդ Գևորգյան", subtitle: "Թերապևտ" },
@@ -45,7 +52,7 @@ const doctors = [
   { image: "39", title: "Ջուլիետա Սարդարյան", subtitle: "Բժիշկ մանրէաբան" },
 
   // Department 5: Various Specialists
-  { image: "3", title: "Անուշ Խանգուլյան", subtitle: "Օնկոլոգ" },
+  // { image: "3", title: "Անուշ Խանգուլյան", subtitle: "Օնկոլոգ" },
   { image: "57", title: "Կարեն Մարտիրոսյան", subtitle: "Մաշկաբան" },
   { image: "9", title: "Գայանե Ղալամքարյան", subtitle: "Սրտաբան" },
   { image: "10", title: "Գյուրջյան Իսահակ", subtitle: "Մանկական վիրաբույժ" },
@@ -59,8 +66,13 @@ const doctors = [
   { image: "40", title: "Սեդա Հովհաննիսյան", subtitle: "ՔԿԱ" },
   { image: "42", title: "Սոնա Զաքարյան", subtitle: "ՔԿԱ" },
   // Department 6: Radiology
-  { image: "35", title: "Մուշեղ Ստեփանյան", subtitle: "Ռենտգենոլոգ" },
+  // { image: "35", title: "Մուշեղ Ստեփանյան", subtitle: "Ռենտգենոլոգ" },
   { image: "58", title: "Նուարդ Սարգսյան", subtitle: "Ռենտգենոլոգ" },
+
+  //new Doctors
+
+
+
 ];
 const sariDoctors = [
   { image: "47", title: "Անահիտ Հարությունյան", subtitle: "Ներզատաբան" },
@@ -81,6 +93,12 @@ const DoctorOneTeamArea = () => {
   const [loading, setLoading] = useState(false);
 
   // Filter doctors based on the search query
+  const query = searchQuery.trim().toLowerCase();
+  const matchesQuery = (doctor) =>
+    doctor.title.toLowerCase().includes(query) ||
+    (doctor.subtitle && doctor.subtitle.toLowerCase().includes(query));
+  const filteredDoctors = doctors.filter(matchesQuery);
+  const filteredSariDoctors = sariDoctors.filter(matchesQuery);
 
   // Handle search change
   const handleSearchChange = (e) => {
@@ -157,16 +175,16 @@ const DoctorOneTeamArea = () => {
             </div>
           </div>
           {/* Render Tigran the Great Department only if it has doctors */}
-          {doctors.length > 0 && (
+          {filteredDoctors.length > 0 && (
             <div className="row">
               <div className="col-12">
                 <div className="team-title">
                   <h2 className="pb-3">{t("Տիգրան Մեծ ԱԿ")}</h2>
                 </div>
               </div>
-              {doctors.map((doctor, index) => (
+              {filteredDoctors.map((doctor) => (
                 <HomeSingleTeam
-                  key={index}
+                  key={doctor.image}
                   image={doctor.image}
                   title={doctor.title}
                   subtitle={doctor.subtitle}
@@ -175,16 +193,16 @@ const DoctorOneTeamArea = () => {
             </div>
           )}
           {/* Render Sari Tagh Department only if it has doctors */}
-          {sariDoctors.length > 0 && (
+          {filteredSariDoctors.length > 0 && (
             <div className="row">
               <div className="col-12">
                 <div className="team-title">
                   <h2 className="pb-3">{t("Սարի Թաղ ստորաբաժանում")}</h2>
                 </div>
               </div>
-              {sariDoctors.map((doctor, index) => (
+              {filteredSariDoctors.map((doctor) => (
                 <HomeSingleTeam
-                  key={index + 43} // Offset index for sariDoctors
+                  key={doctor.image}
                   image={doctor.image}
                   title={doctor.title}
                   subtitle={doctor.subtitle}
@@ -192,6 +210,16 @@ const DoctorOneTeamArea = () => {
               ))}
             </div>
           )}
+          {/* No results message */}
+          {!loading &&
+            filteredDoctors.length === 0 &&
+            filteredSariDoctors.length === 0 && (
+              <div className="row">
+                <div className="col-12 text-center">
+                  <p>{t("Ոչինչ չի գտնվել")}</p>
+                </div>
+              </div>
+            )}
         </div>
       </section>
     </>
